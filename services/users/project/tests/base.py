@@ -1,9 +1,9 @@
 # services/users/project/tests/base.py
 
-
+from project import create_app, db
 from flask_testing import TestCase
 
-from project import app, db
+app = create_app()
 
 
 class BaseTestCase(TestCase):
